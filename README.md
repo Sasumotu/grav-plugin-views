@@ -84,6 +84,18 @@ Via the administrator plugin, you can view the current counts of the top 20 view
 Grav::instance()['views']->getAll(null, 20, 'desc')
 ```
 
+To show the view count on the page itself use the following Twig function:
+
+```twig
+{{ show_views(page.route) }}
+```
+
+or specify a custom type
+
+```twig
+{{ show_views(page.route, 'widgets') }}
+```
+
 ## CLI Commands
 
 There are currently two built in commands:

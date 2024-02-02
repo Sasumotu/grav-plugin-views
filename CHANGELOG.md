@@ -1,3 +1,9 @@
+# v1.2.0
+## 02/02/2024
+
+1. [](#new)
+    * Added `show_views` Twig function to embed view counter on pages
+
 # v1.1.0
 ## 12/02/2020
 

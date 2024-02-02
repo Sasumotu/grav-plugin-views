@@ -131,6 +131,9 @@ class ViewsPlugin extends Plugin
         $this->grav['twig']->twig()->addFunction(
             new \Twig_SimpleFunction('track_views', [$this, 'trackViewsFunc'], ['is_safe' => ['html']])
         );
+        $this->grav['twig']->twig()->addFunction(
+            new \Twig_SimpleFunction('show_views', [$this, 'showViewsFunc'], ['is_safe' => ['html']])
+        );
     }
 
     public function onPageInitialized(Event $event)
@@ -153,5 +156,20 @@ class ViewsPlugin extends Plugin
         $id = (string)$id;
 
         $this->grav['views']->track($id, $type);
+    }
+
+    /**
+     * @param mixed|null $id
+     */
+    public function showViewsFunc($id = null, $type = null)
+    {
+        if (null === $id) {
+            return;
+        }
+
+        // Convert objects to string
+        $id = (string)$id;
+
+        return $this->grav['views']->get($id, $type);
     }
 }

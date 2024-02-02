@@ -1,17 +1,17 @@
 name: Views
 type: plugin
 slug: views
-version: 1.1.0
+version: 1.2.0
 description: Simple View tracking and reporting
 icon: eye
 author:
   name: Trilby Media
   email: hello@trilby.media
-homepage: https://github.com/trilbymedia/grav-plugin-views
+homepage: https://github.com/Sasumotu/grav-plugin-views
 demo: http://demo.yoursite.com
 keywords: grav, plugin, views
-bugs: https://github.com/trilbymedia/grav-plugin-views/issues
-docs: https://github.com/trilbymedia/grav-plugin-views/blob/develop/README.md
+bugs: https://github.com/Sasumotu/grav-plugin-views/issues
+docs: https://github.com/Sasumotu/grav-plugin-views/blob/develop/README.md
 license: MIT
 
 dependencies:
